@@ -16,8 +16,17 @@
     <body>
         <div class="text-center">
             <h1>Hello World!</h1>
-            <p> This is a test page. Click blow and nothing will happen ;-)</p>
-            <a class="btn btn-primary">Signup now</a> 
+            <p> This is a test page. Click blow and nothing will happen</p>
+            <!-- <a class="btn btn-primary">Signup now</a> -->
+            <button id="myBtn">Try it</button>
+            <p id="demo"></p>
+
+            <script>
+            document.getElementById("myBtn").addEventListener("click", function() {
+            document.getElementById("demo").innerHTML = "Okay, maybe that was a lie ;-)";
+            analytics.track('Clicked');
+            });
+            </script>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
