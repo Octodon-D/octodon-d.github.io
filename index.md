@@ -1,4 +1,3 @@
 ## Hey!
 
-Klick here to take a test.
-
+Click here to get to my [GitHub account](https://github.com/Octodon-D) 
